@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 
 @Getter
 public class CurrencyRequestDto {
+
     private String currencyName;
     private BigDecimal exchangeRate;
     private String symbol;
