@@ -20,6 +20,9 @@ public class CurrencyService {
         return new CurrencyResponseDto(findCurrencyById(id));
     }
 
+//    private Currency findCurrencyById(Long id) {
+//    }
+
 
     public List<CurrencyResponseDto> findAll() {
         return currencyRepository.findAll().stream().map(CurrencyResponseDto::toDto).toList();

@@ -15,8 +15,11 @@ public class CurrencyResponseDto {
 
     public CurrencyResponseDto(Currency currency) {
         this.id = currency.getId();
+
         this.currencyName = currency.getCurrencyName();
+
         this.exchangeRate = currency.getExchangeRate();
+
         this.symbol = currency.getSymbol();
     }
 
@@ -29,6 +32,7 @@ public class CurrencyResponseDto {
 
     public static CurrencyResponseDto toDto(Currency currency) {
         return new CurrencyResponseDto(
+
             currency.getId(),
             currency.getCurrencyName(),
             currency.getExchangeRate(),
